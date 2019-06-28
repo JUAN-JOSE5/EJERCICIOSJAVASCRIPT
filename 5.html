@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style> 
+   </style>
+</head>
+<body>
+<h1>Ejercicio 5 JavaScript</h1>
+<script>
+  var peso=parseFloat(window.prompt("Digite su peso en Kg: "));
+  var estatura=parseFloat(window.prompt("Digite su estatura en Metros: "));
+  var imc;
+  imc=peso/Math.pow(estatura,2);
+  document.write("Su indice de masa corporal (IMC) es: "+imc);
+  document.write("<p>");
+  if(imc<18.5){
+    document.write("Bajo de Peso");
+  }
+  if(imc>=18.5 && imc<=24.9){
+    document.write("Normal");
+  }
+  if(imc>=25 && imc<=29.9){
+    document.write("Sobrepeso");
+  }
+  if(imc>=30 && imc<=34.9){
+    document.write("Obesidad 1");
+  }
+  if(imc>=35 && imc<=39.9){
+    document.write("Obesidad 2");
+  }
+  if(imc>=40 && imc<=49.9){
+    document.write("Obesidad 3");
+  }
+  if(imc>50){
+    document.write("Obesidad 4");
+  }
+  document.write("</p>");
+</script>      
+</body>
+</html>
